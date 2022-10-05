@@ -1,10 +1,15 @@
 package AV.avdayli.Project;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.time.LocalDate;
-import java.util.Date;
 
+
+@Entity
+@Table
 public class Project {
-
+@Id
     private Long pnumber;
     private String jobtype;
     private LocalDate datecreated;
